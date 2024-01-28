@@ -921,12 +921,7 @@ flex-shrink: 0;
   width: calc((100% - 72px) / 2);
   margin-bottom: 8px;
 }
-.display-flex-about-section {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  width: calc((100% - 72px) / 2);
-}
+
 
 
 
