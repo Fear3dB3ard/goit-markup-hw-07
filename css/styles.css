@@ -173,7 +173,7 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-width: 428px;
+min-width: 428px;
 height: 432px;
 flex-shrink: 0;
  
@@ -230,8 +230,9 @@ text-transform: capitalize;
   /* display: flex; */
 }
 .display-flex-about-section {
-  /* display: flex; */
-  /* gap: 24px; */
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 .list-about-section {
   gap: 72px;
@@ -330,14 +331,13 @@ text-transform: capitalize;
 }
 
 .our-team-list {
-  /* display: flex; */
-  
   border-radius: 4px;
   width: fit-content;
   display: inline-flex;
 flex-direction: column;
 align-items: center;
 gap: 72px;
+padding-left: 0px;
 }
 .image-background {
   border-radius: 0px 0px 4px 4px;
@@ -427,9 +427,10 @@ gap: 72px;
   display: flex;
   gap: 24px;
   /* height: 88px; */
-  /* padding: 0; */
+  padding: 0;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .elements-list {
   width: calc((100% - 120px) / 2);
@@ -476,6 +477,8 @@ footer {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 76px;
+  display: flex;
+  justify-content: flex-end;
 }
 .studio_item_foother {
   color: var(--CLOUD);
@@ -885,30 +888,53 @@ footer {
     --padding-vertical-global: 96px;
     --padding-horizontal-global: 21px;
   }
-  .title-efectiv-solution {
+  .title_section {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--WHITE);
   font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 60px; /* 107.143% */
-letter-spacing: 1.12px;
-  text-align: center;
-  
-  margin: 0 auto;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+/* width: 768px; */
+height: 436px;
+flex-shrink: 0;
+ 
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+
 }
 .about-section-title {
   color: #2e2f42;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 40px;
   letter-spacing: 0.72px;
   text-align: center;
-  width: 264px;
+  width: calc((100% - 72px) / 2);
   margin-bottom: 8px;
 }
+.display-flex-about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  width: calc((100% - 72px) / 2);
 }
 
-@media screen and (width >= 1440px) {
+
+
+
+
+}
+
+@media screen and (width >= 1158px) {
   :root {
     --padding-vertical-global: 120px;
     --padding-horizontal-global: 156px;
