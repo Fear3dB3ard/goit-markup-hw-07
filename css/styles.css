@@ -15,6 +15,7 @@ body {
   background-color: var(--color-white);
   color: var(--color-slate);
   width: fit-content;
+  max-width: 1150px;
 }
 
 ul {
@@ -1462,3 +1463,16 @@ input:checked + .modal-label-checkbox span:first-child {
     align-items: center;
   }
 }
+/* @media screen and( width <= 1158px) {
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .body {
+    font-family: var(--text-font-family);
+    background-color: var(--color-white);
+    color: var(--color-slate);
+    width: 1158px;
+  }
+} */
